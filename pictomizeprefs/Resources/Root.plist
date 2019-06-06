@@ -100,7 +100,7 @@
 			<key>showValue</key>
 			<true/>
 		</dict>
-		<!-- <dict>
+		<dict>
 			<key>PostNotification</key>
 			<string>com.v1s10n4.pictomize.prefsChanged</string> 
 			<key>cell</key>
@@ -119,7 +119,7 @@
             <string>FFFFFF</string>
 			<key>alpha</key>
 			<true/>
-		</dict> -->
+		</dict>
 	</array>
 	<key>title</key>
 	<string>PictomizePrefs</string>
