@@ -1,0 +1,9 @@
+Package: com.v1s10n4.pictomize
+Name: Pictomize
+Depends: mobilesubstrate
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: Customize all your homescreen icons.
+Maintainer: v1s10n_4 <vision4@hotmail.fr>
+Author: v1s10n_4 <vision4@hotmail.fr>
+Section: Homescreen
