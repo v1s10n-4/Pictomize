@@ -37,18 +37,6 @@
 			<key>label</key>
 			<string>Border radius</string>
 		</dict>
-		<!-- <dict>
-			<key>cell</key>
-			<string>PSSwitchCell</string>
-			<key>default</key>
-			<true/>
-			<key>defaults</key>
-			<string>com.v1s10n4.pictomizeprefs</string>
-			<key>key</key>
-			<string>borderRadiusEnabled</string>
-			<key>label</key>
-			<string>Enable border radius</string>
-		</dict> -->
 		<dict>
 			<key>cell</key>
 			<string>PSSliderCell</string>
@@ -111,8 +99,8 @@
 			<string>borderColor</string>
 			<key>label</key>
 			<string>Border color</string>
-            <key>fallback</key>
-            <string>FFFFFF</string>
+			<key>fallback</key>
+			<string>FFFFFF</string>
 			<key>alpha</key>
 			<true/>
 		</dict>
@@ -209,8 +197,8 @@
 			<string>folderBorderColor</string>
 			<key>label</key>
 			<string>Border color</string>
-            <key>fallback</key>
-            <string>FFFFFF</string>
+			<key>fallback</key>
+			<string>FFFFFF</string>
 			<key>alpha</key>
 			<true/>
 		</dict>
