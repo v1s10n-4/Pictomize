@@ -15,7 +15,7 @@
 		<key>isController</key>
 		<true/>
 		<key>label</key>
-		<string>PictomizePrefs</string>
+		<string>Pictomize</string>
 	</dict>
 </dict>
 </plist>
