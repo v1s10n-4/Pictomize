@@ -23,8 +23,8 @@
 - (void) respring {
     UIAlertController *alert = [
     	UIAlertController 
-    	alertControllerWithTitle:@"Respring"
-        message:@"Are You Sure You Want To Respring?"
+    	alertControllerWithTitle:@"Pictomize"
+        message:@"This will apply all your current settings"
         preferredStyle:UIAlertControllerStyleActionSheet
     ];
     
@@ -33,7 +33,7 @@
     	actionWithTitle:@"Respring"
         style:UIAlertActionStyleDestructive 
         handler:^(UIAlertAction * action) {
-        	 NSTask *t = [[NSTask alloc] init];
+            NSTask *t = [[NSTask alloc] init];
     		[t setLaunchPath:@"/usr/bin/killall"];
     		[t setArguments:[NSArray arrayWithObjects:@"backboardd", nil]];
     		[t launch];
@@ -50,4 +50,14 @@
     [self presentViewController:alert animated:YES completion:nil];
 }
 
+- (void)launchTwitter:(id)sender {
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://twitter.com/V1s10n_4"] options:@{} completionHandler:nil];
+}
+
+- (void)launchGithub:(id)sender {
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://github.com/vision-4/Pictomize"] options:@{} completionHandler:nil];
+}
+- (void)launchDonate:(id)sender {
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=TYH44YTNFW4M6&source=url"] options:@{} completionHandler:nil];
+}
 @end

@@ -1,9 +1,13 @@
 Package: com.v1s10n4.pictomize
 Name: Pictomize
-Depends: mobilesubstrate
-Version: 0.0.1
+Depends: mobilesubstrate, com.creaturesurvive.libcscolorpicker
+Version: 1.0.0
 Architecture: iphoneos-arm
 Description: Customize all your homescreen icons.
 Maintainer: v1s10n_4 <vision4@hotmail.fr>
 Author: v1s10n_4 <vision4@hotmail.fr>
 Section: Homescreen
+Icon: https://vision-4.github.io/repo/depictions/pictomize.png
+Depiction: https://vision-4.github.io/repo/depictions/?p=com.v1s10n4.pictomize
+Support: https://vision-4.github.io/repo
+Tag: purpose::tweak, compatible::ios7, compatible::ios8, compatible::ios9, compatible::ios10, compatible::ios11, compatible::ios12

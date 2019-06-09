@@ -43,7 +43,7 @@
 			<key>isSegmented</key>
 			<true/>
 			<key>segmentCount</key>
-			<integer>1</integer>
+			<integer>100</integer>
 			<key>default</key>
 			<integer>32</integer>
 			<key>defaults</key>
@@ -51,9 +51,9 @@
 			<key>key</key>
 			<string>radius</string>
 			<key>max</key>
-			<real>99</real>
+			<real>100</real>
 			<key>min</key>
-			<real>1</real>
+			<real>0</real>
 			<key>showValue</key>
 			<true/>
 		</dict>
@@ -70,9 +70,9 @@
 			<key>isSegmented</key>
 			<true/>
 			<key>segmentCount</key>
-			<integer>1</integer>
+			<integer>30</integer>
 			<key>default</key>
-			<integer>5</integer>
+			<integer>3</integer>
 			<key>defaults</key>
 			<string>com.v1s10n4.pictomizeprefs</string>
 			<key>key</key>
@@ -100,7 +100,7 @@
 			<key>label</key>
 			<string>Border color</string>
 			<key>fallback</key>
-			<string>FFFFFF</string>
+			<string>6B6B6B</string>
 			<key>alpha</key>
 			<true/>
 		</dict>
@@ -129,9 +129,9 @@
 			<key>isSegmented</key>
 			<true/>
 			<key>segmentCount</key>
-			<integer>1</integer>
+			<integer>200</integer>
 			<key>default</key>
-			<integer>38</integer>
+			<integer>120</integer>
 			<key>defaults</key>
 			<string>com.v1s10n4.pictomizeprefs</string>
 			<key>key</key>
@@ -168,7 +168,7 @@
 			<key>isSegmented</key>
 			<true/>
 			<key>segmentCount</key>
-			<integer>1</integer>
+			<integer>155</integer>
 			<key>default</key>
 			<integer>0</integer>
 			<key>defaults</key>
@@ -198,9 +198,52 @@
 			<key>label</key>
 			<string>Border color</string>
 			<key>fallback</key>
-			<string>FFFFFF</string>
+			<string>6B6B6B</string>
 			<key>alpha</key>
 			<true/>
+		</dict>
+
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Credits</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>action</key>
+			<string>launchTwitter:</string>
+			<key>hasIcon</key>
+			<true/>
+			<key>icon</key>
+			<string>twitter.png</string>
+			<key>label</key>
+			<string>v1s10n_4 Twitter</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>action</key>
+			<string>launchGithub:</string>
+			<key>hasIcon</key>
+			<true/>
+			<key>icon</key>
+			<string>github.png</string>
+			<key>label</key>
+			<string>Source code</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>action</key>
+			<string>launchDonate:</string>
+			<key>hasIcon</key>
+			<true/>
+			<key>icon</key>
+			<string>paypal.png</string>
+			<key>label</key>
+			<string>Donate</string>
 		</dict>
 	</array>
 	<key>title</key>
