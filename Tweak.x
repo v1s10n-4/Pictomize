@@ -1,4 +1,5 @@
 #include <CSColorPicker/CSColorPicker.h>
+#include <CSPreferences/libCSPreferences.h>
 #define PLIST_PATH @"/var/mobile/Library/Preferences/com.v1s10n4.pictomizeprefs.plist"
 
 bool GetPrefBool(NSString *key) {
@@ -57,5 +58,26 @@ NSString *GetPrefString(NSString *key) {
         self.layer.borderWidth = GetPrefFloat(@"folderBorderWidth");
         self.layer.borderColor = [UIColor cscp_colorFromHexString:GetPrefString(@"folderBorderColor")].CGColor;
     }
+}
+%end
+
+%hook SBMutableIconLabelImageParameters
+- (void)setText:(NSString *)text {
+	if (GetPrefBool(@"labelEnabled") && ([GetPrefString(@"labelText") length] > 0))
+		text = GetPrefString(@"labelText");
+	%orig(text);
+}
+
+- (void)setFont:(UIFont *)font {
+	CGFloat size = GetPrefFloat(@"labelFontSize");
+	if (GetPrefBool(@"labelEnabled"))
+		font = [UIFont fontWithName:GetPrefString(@"labelFont") size: !size ? 12 : size];
+	%orig(font);
+}
+
+- (void)setTextColor:(UIColor *)color {
+	if (GetPrefBool(@"labelEnabled"))
+		color = [UIColor cscp_colorFromHexString:GetPrefString(@"labelFontColor")];
+	%orig(color);
 }
 %end

@@ -13,7 +13,7 @@ PictomizePrefs_INSTALL_PATH = /Library/PreferenceBundles
 PictomizePrefs_FRAMEWORKS = UIKit
 PictomizePrefs_PRIVATE_FRAMEWORKS = Preferences
 PictomizePrefs_CFLAGS = -fobjc-arc
-PictomizePrefs_LDFLAGS += -lCSColorPicker
+PictomizePrefs_LDFLAGS += -lCSColorPicker -lCSPreferences
 
 include $(THEOS_MAKE_PATH)/bundle.mk
 

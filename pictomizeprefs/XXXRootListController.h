@@ -1,5 +1,5 @@
-#import <Preferences/PSListController.h>
+#import <CSPreferences/libCSPreferences.h>
 
-@interface XXXRootListController : PSListController
+@interface XXXRootListController : CSPListController
 
 @end
