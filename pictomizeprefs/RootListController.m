@@ -1,4 +1,4 @@
-#include "XXXRootListController.h"
+#include "RootListController.h"
 
 @interface NSTask : NSObject
 
@@ -11,7 +11,7 @@
 
 @end
 
-@implementation XXXRootListController
+@implementation RootListController
 
 -(NSArray *) specifiers {
 	if (!_specifiers) {
@@ -54,9 +54,14 @@
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://twitter.com/V1s10n_4"] options:@{} completionHandler:nil];
 }
 
+- (void)launchDevGithub:(id)sender {
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://github.com/vision-4"] options:@{} completionHandler:nil];
+}
+
 - (void)launchGithub:(id)sender {
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://github.com/vision-4/Pictomize"] options:@{} completionHandler:nil];
 }
+
 - (void)launchDonate:(id)sender {
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=TYH44YTNFW4M6&source=url"] options:@{} completionHandler:nil];
 }

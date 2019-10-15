@@ -2,13 +2,10 @@ ARCHS = arm64e
 TARGET = iphone:clang:12.1:12.1  
 SDK = iPhoneOS12.1
 
-THEOS_DEVICE_IP = localhost
-THEOS_DEVICE_PORT = 2222
-
 include $(THEOS)/makefiles/common.mk
 
 BUNDLE_NAME = PictomizePrefs
-PictomizePrefs_FILES = XXXRootListController.m
+PictomizePrefs_FILES = RootListController.m
 PictomizePrefs_INSTALL_PATH = /Library/PreferenceBundles
 PictomizePrefs_FRAMEWORKS = UIKit
 PictomizePrefs_PRIVATE_FRAMEWORKS = Preferences
