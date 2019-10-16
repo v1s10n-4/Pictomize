@@ -89,6 +89,10 @@ static NSString *zalgoString(NSString *string) {
 @interface SBFloatyFolderBackgroundClipView : UIView
 @end
 
+@interface SBDockView : UIView
+	// SBWallpaperEffectView *_backgroundView
+@end
+
 %hook SBIconImageView
 + (CGFloat)cornerRadius {
 	if (GetPrefBool(@"enabled")) {
@@ -151,3 +155,33 @@ static NSString *zalgoString(NSString *string) {
 	%orig(color);
 }
 %end
+
+SBDockView *dockView = nil;
+
+%hook SBDockView
+	// SBWallpaperEffectView *view = [[%c(SBDockView) sharedInstance] backgroundView];
+
+	- (void)layoutSubviews {
+		%orig;
+		UIView *backgroundView = [self valueForKey:@"_backgroundView"];
+		backgroundView.layer.cornerRadius = 52;
+	}
+%end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
